@@ -1,5 +1,6 @@
 // aula 03 - index.js
 // console.log()
+// 21.04.2022
 
 console.log('Paulo "teste"');
 console.log("Paulo 'teste'");
