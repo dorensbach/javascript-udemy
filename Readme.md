@@ -4,3 +4,5 @@
 #### Repositório no Github: [luizomf/curso-js](https://github.com/luizomf/curso-js)
 
 Inicio: 21.04.2022
+
+Obs: os números dos diretórios (aula10, aula11, etc) não correspondem ao número das aulas ma Udemy.
