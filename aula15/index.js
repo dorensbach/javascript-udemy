@@ -48,3 +48,6 @@ num5 = 0.7;
 num6 = 0.1;
 num9 = ((num5 * 100) + (num6 * 100)) / 100;
 console.log(num9);
+
+// Divisão por 0
+console.log(100 / 0); // Retorna infinito
