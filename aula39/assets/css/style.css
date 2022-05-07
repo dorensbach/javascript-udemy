@@ -16,6 +16,8 @@ body {
 }
 
 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 640px;
     margin: 50px auto;
     background: #fff;
@@ -54,6 +56,10 @@ form button:hover {
     background: var(--primary-color-darker);
 }
 
-.relogio {
+.relogio, .relogio2 {
     font-size: 3em;
+}
+
+.pausado {
+    color: red;
 }
