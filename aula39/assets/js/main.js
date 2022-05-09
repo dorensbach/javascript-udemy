@@ -15,7 +15,7 @@ function formataDoisDig(num) {
     return num < 10 ? '0' + num.toString() : num.toString();
 }
 
-function montaTimer(tempo) {
+function montaTimer() {
     let segundos = count % 60;;
     let minutos = Math.floor(count/60);
     minutos = minutos < 60 ? minutos :minutos % 60;
@@ -41,7 +41,7 @@ zerar.addEventListener('click', function (event) {
     clearInterval(timer);
     relogio.classList.remove('pausado');
     count = 0;
-    relogio.innerHTML = montaTimer(count);
+    relogio.innerHTML = montaTimer();
 })
 
 
