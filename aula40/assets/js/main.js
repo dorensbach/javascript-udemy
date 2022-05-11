@@ -67,5 +67,16 @@ document.addEventListener('click', function(e) {
     // console.log(el);
     if (el.classList.contains('apagar')) {
         el.parentElement.remove();
+        salvarTarefas();
     }
 });
+
+function adicionaTarefasSalvas() {
+    const tarefas = localStorage.getItem('tarefas');
+    const listaDeTarefas = JSON.parse(tarefas);
+    for (let tarefa of listaDeTarefas) {
+        criaTarefa(tarefa);
+    }
+}
+
+adicionaTarefasSalvas();
