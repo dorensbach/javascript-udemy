@@ -15,3 +15,14 @@ Obs: os números dos diretórios (aula10, aula11, etc) não correspondem ao núm
 \
 \
 Procuro colocar nos comentários do commit um resumo sobre aquela aula
+
+
+## Organização das aulas/diretórios
+
+### Seção 2: Javascript Básico
+>Aulas 03 a 21
+### Seção 3: Javascript - Lógica de programação
+>Aulas 22 a 40
+### Seção 4: Javascript Funções (Avançado)
+>Aulas 41 a
+### Seção 5: Javascript Arrays (Avançado)
