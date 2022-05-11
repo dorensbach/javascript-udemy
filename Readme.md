@@ -17,6 +17,7 @@ Obs: os números dos diretórios (aula10, aula11, etc) não correspondem ao núm
 Procuro colocar nos comentários do commit um resumo sobre aquela aula
 
 
+***
 ## Organização das aulas/diretórios
 
 ### Seção 2: Javascript Básico
