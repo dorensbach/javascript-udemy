@@ -25,15 +25,35 @@ function montaTimer(count) {
 }
 
 function setaIcone(count) {
-    if (count < 300) return '<img src="./assets/img/face-laugh-beam.svg">';
-    if (count < 600) return '<img src="./assets/img/face-frown.svg">';
-    if (count < 750) return '<img src="./assets/img/face-sad-tear.svg">';
-    if (count < 900) return '<img src="./assets/img/face-sad-cry.svg">';
-    if (count >= 900) return '<img src="./assets/img/face-angry.svg">';
+    if (count < 300) {
+        return '<img src="./assets/img/face-laugh-beam.svg">';
+    }
+    if (count < 600) {
+        document.body.classList.value = 'warning';
+        return '<img src="./assets/img/face-frown.svg">';
+    }
+    if (count < 750) {
+        document.body.classList.value = 'warning2';
+        return '<img src="./assets/img/face-sad-tear.svg">';
+    }
+    if (count < 900) {
+        document.body.classList.value = 'warning2';
+        return '<img src="./assets/img/face-sad-cry.svg">';
+    }
+    if (count < 1050) {
+        // document.body.classList.add('alert');
+        document.body.classList.value = 'alert';
+        return '<img src="./assets/img/face-angry.svg">'
+    };
+    if (count >= 1050) {
+        // document.body.classList.add('alert');
+        document.body.classList.value = count % 2 ===0 ? 'alert' : 'black';
+        return '<img src="./assets/img/face-angry.svg">'
+    };
 
 }
 
-iniciar.addEventListener('click', function(event) {
+function iniciaContador() {
     clearInterval(timer);
     contador.classList.remove('pausado');
     timer = setInterval(function (){
@@ -41,17 +61,36 @@ iniciar.addEventListener('click', function(event) {
         contador.innerHTML = montaTimer(count);
         icone.innerHTML = setaIcone(count);
     }, 1000);
-});
+}
 
-pausar.addEventListener('click', function(event) {
+function pausarContador() {
     clearInterval(timer);
     contador.classList.add('pausado');
-})
+}
 
-zerar.addEventListener('click', function (event) {
+function zerarContador() {
     clearInterval(timer);
     contador.classList.remove('pausado');
+    document.body.classList.value = '';
     count = 0;
     contador.innerHTML = montaTimer(count);
     icone.innerHTML = setaIcone(count);
+}
+
+iniciar.addEventListener('click', function(event) {
+    iniciaContador();
+});
+
+pausar.addEventListener('click', function(event) {
+    pausarContador();
 })
+
+zerar.addEventListener('click', function (event) {
+    zerarContador();
+})
+
+document.addEventListener('keypress', function(e) {
+    if (e.keyCode === 105) iniciaContador();
+    if (e.keyCode === 112) pausarContador();
+    if (e.keyCode === 122) zerarContador();
+});

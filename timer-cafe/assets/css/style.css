@@ -1,6 +1,11 @@
 :root {
     --primary-color: rgb(17, 86, 102);
     --primary-color-darker: rgb(9, 48, 56);
+    --primary-color-alert: rgb(141, 13, 30);
+    --primary-color-warning: rgb(238, 220, 59);
+    --primary-color-warning2: rgb(216, 99, 22);
+    --primary-color-blank: rgb(255, 255, 255);
+    --primary-color-black: rgb(0, 0, 0);
 }
 * {
     box-sizing: border-box;
@@ -65,4 +70,24 @@ form button:hover {
     width: 200px;
     max-height: 200px;
     /* align-items: center; */
+}
+
+.alert {
+    background: var(--primary-color-alert) ;
+}
+
+.warning {
+    background: var(--primary-color-warning) ;
+}
+
+.warning2 {
+    background: var(--primary-color-warning2) ;
+}
+
+.blank {
+    background: var(--primary-color-blank) ;
+}
+
+.black {
+    background: var(--primary-color-black) ;
 }
