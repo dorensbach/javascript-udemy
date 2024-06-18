@@ -27,3 +27,4 @@ Procuro colocar nos comentários do commit um resumo sobre aquela aula
 ### Seção 4: Javascript Funções (Avançado)
 >Aulas 41 a 51
 ### Seção 5: Javascript Arrays (Avançado)
+>Aulas 52 a 
